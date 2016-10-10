@@ -27294,6 +27294,15 @@
 	            { to: '/services', activeClassName: 'active' },
 	            'сервисы'
 	          )
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          _react2.default.createElement(
+	            _reactRouter.Link,
+	            { to: '/admin_room', activeClassName: 'active' },
+	            'test'
+	          )
 	        )
 	      ),
 	      _react2.default.createElement('div', { className: 'navi-divider' }),
