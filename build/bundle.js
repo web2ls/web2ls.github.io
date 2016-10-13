@@ -28294,7 +28294,7 @@
 					_react2.default.createElement(
 						'div',
 						{ className: 'content__header' },
-						'Услуги'
+						'Сервисы'
 					),
 					_react2.default.createElement(
 						'div',
