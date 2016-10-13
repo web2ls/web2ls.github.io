@@ -30405,7 +30405,7 @@
 	      _react2.default.createElement('img', { src: this.state.imageLink }),
 	      _react2.default.createElement(
 	        'a',
-	        { href: this.props.workLink },
+	        { href: this.props.workLink, target: '_blank' },
 	        _react2.default.createElement(
 	          'div',
 	          { className: this.state.imageHover ? 'work-description' : 'hidden' },
