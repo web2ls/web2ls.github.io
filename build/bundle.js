@@ -102,18 +102,6 @@
 	__webpack_require__(288);
 	__webpack_require__(296);
 
-	/*const firebase = require('firebase');
-
-	const config = {
-	    apiKey: "AIzaSyBZylV35-qbYyG5xfOqIgfKqRKjVU-eQtU",
-	    authDomain: "online-react-app.firebaseapp.com",
-	    databaseURL: "https://online-react-app.firebaseio.com",
-	    storageBucket: "online-react-app.appspot.com"
-	};
-	firebase.initializeApp(config);
-	const database = firebase.database();
-	const storage = firebase.storage();*/
-
 	_reactDom2.default.render(_react2.default.createElement(
 	  _reactRouter.Router,
 	  { history: _reactRouter.hashHistory },
@@ -134,9 +122,6 @@
 	    _react2.default.createElement(_reactRouter.Route, { path: '*', component: _NotFoundPage2.default })
 	  )
 	), document.getElementById('container-app'));
-
-	/*export {database, storage};*/
-
 	;
 
 	(function () {
@@ -28737,6 +28722,8 @@
 		},
 
 		render: function render() {
+			console.log(this.state.works);
+			console.log(_underscore2.default.values(this.state.works));
 			return _react2.default.createElement(
 				'div',
 				null,
@@ -28758,7 +28745,7 @@
 					_react2.default.createElement(
 						'div',
 						{ className: 'content__text' },
-						_underscore2.default.values(this.state.works).map(function (work) {
+						_underscore2.default.values(this.state.works).reverse().map(function (work) {
 							return _react2.default.createElement(_Work2.default, { key: work.id,
 								workName: work.workName,
 								workDescr: work.workDescr,
